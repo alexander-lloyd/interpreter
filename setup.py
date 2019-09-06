@@ -15,15 +15,18 @@ AUTHOR = 'Alexander Lloyd'
 REQUIRES_PYTHON = '>=3.0.0'
 VERSION = None
 
+here = os.path.abspath(os.path.dirname(__file__))
+
 # Required Packages.
-REQUIRED = [
-]
+try:
+    with io.open(os.path.join(here, 'requirements.txt')) as r:
+        REQUIRED = r.read().split('\n')
+except FileNotFoundError:
+    REQUIRED = []
 
 # Optional Packages.
 EXTRAS = {
 }
-
-here = os.path.abspath(os.path.dirname(__file__))
 
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.md' is present in your MANIFEST.in file!
