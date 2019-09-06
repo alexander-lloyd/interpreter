@@ -1,4 +1,7 @@
 import argparse
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def build_arg_parser():
@@ -8,12 +11,32 @@ def build_arg_parser():
     return parser
 
 
-def main(program_args):
-    print("--- Interpreter ---")
-    print(program_args)
+def run_repl():
+    try:
+        while True:
+            line = input('>>> ')
+            logger.debug(line)
+    except KeyboardInterrupt:
+        pass
+
+
+def run_file(source_file):
+    pass
+
+
+def main():
+    argparser = build_arg_parser()
+    args = argparser.parse_args()
+
+    source_file = args.filename
+
+    if source_file is None:
+        # REPL
+        run_repl()
+    else:
+        code = open(source_file)
+        run_file(code)
 
 
 if __name__ == '__main__':
-    argparser = build_arg_parser()
-    args = argparser.parse_args()
-    main(args)
+    main()
