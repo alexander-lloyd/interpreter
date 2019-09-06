@@ -117,6 +117,6 @@ Project Link: [https://github.com/alexander-lloyd/interpeter](https://github.com
 [issues-shield]: https://img.shields.io/github/issues/alexander-lloyd/interpreter?style=flat-square
 [issues-url]: https://github.com/alexander-lloyd/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/alexander-lloyd/interpreter?style=flat-square
-[license-url]: https://github.com/alexander-lloyd/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/alexander-lloyd/Best-README-Template/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/alexander-lloyd
