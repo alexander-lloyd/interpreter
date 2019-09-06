@@ -68,7 +68,7 @@ Download a version of python from the [downloads pages](https://www.python.org/d
  
 1. Best way at the moment is pip install from github repo.
 ```bash
-pip install git+https://github.com/alexander-lloyd/interpret.git
+pip install git+https://github.com/alexander-lloyd/interpreter.git
 ```
 
 ## Usage
@@ -103,7 +103,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/alex___lloyd)
+Your Name - [@alex___lloyd](https://twitter.com/alex___lloyd)
 
 Project Link: [https://github.com/alexander-lloyd/interpeter](https://github.com/alexander-lloyd/interpeter)
 
