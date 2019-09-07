@@ -1,6 +1,8 @@
 import argparse
 import logging
 
+from proglang import Scanner
+
 logger = logging.getLogger(__name__)
 
 
@@ -16,6 +18,9 @@ def run_repl():
         while True:
             line = input('>>> ')
             logger.debug(line)
+            scanner = Scanner(line)
+            tokens = scanner.scan_tokens()
+            print(tokens)
     except KeyboardInterrupt:
         pass
 
