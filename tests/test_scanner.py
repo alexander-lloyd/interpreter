@@ -43,7 +43,7 @@ cases = [
 class TestScanner(TestCase):
     def test_scanner(self):
         for (source, tokens) in cases:
-            with self.subTest(f'Input {source}'):
+            with self.subTest('Input {}'.format(source)):
                 scanner = Scanner(source)
                 expected_tokens = scanner.scan_tokens()
                 self.assertEqual(tokens, expected_tokens)
