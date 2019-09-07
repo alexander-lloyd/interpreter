@@ -25,7 +25,10 @@ class Token:
         self.literal = literal
 
     def __repr__(self) -> str:
-        return f'Token({self.token_type},{self.lexeme})>'
+        return 'Token({token_type},{lexeme})>'.format(
+            token_type=self.token_type,
+            lexeme=self.lexeme
+        )
 
     def __eq__(self, other: 'Token') -> bool:
         return (
